@@ -1,4 +1,4 @@
-class Virus {
+class Light {
   constructor(_xs,_ys,_d,_xp,_yp){
 
     this.xs = _xs;

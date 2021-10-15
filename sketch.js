@@ -9,20 +9,19 @@ let button;
 let color1 = 0;
 
 function setup() {
-  createCanvas(500, 500);
-  virus = new Virus(-1,2,20);
-  //viruses[0] = new Virus(random(-3,3),random(-3,3),random(5,25));
+  createCanvas(600, 700);
+  virus = new Light(-1,2,20);
   for (let i = 0; i < 700; i ++){
-    viruses[i] = new Virus(random(-1,1),random(-1,1),random(5,25),random(width),random(height));
+    viruses[i] = new Light(random(-1,1),random(-1,1),random(5,25),random(width),random(height));
   }
   for (let i = 0; i < 800; i ++){
-    viruses2[i] = new Virus(random(-0.5,0.5),random(-2,2),random(3,10),random(width),random(height));
+    viruses2[i] = new Light(random(-0.5,0.5),random(-2,2),random(3,10),random(width),random(height));
   }
 
   for (let i = 0; i < 300; i ++){
     viruses3[i] = new Virus2(random(-2,2),random(-0.5,0.5),random(5,20),random(width),random(height));
   }
-  textFont('Do Hyeon');
+  textFont('urbanist');
   button = createButton('First');
   button.mousePressed(buttonClicked);
   button.style('border:none');
@@ -87,7 +86,7 @@ if (start1 == true && mouseX >= 200 && mouseX <= 300 && mouseY >= 200 && mouseY 
   textSize(32);
   //fontWeight(400);
   textAlign(CENTER);
-  textFont('Do Hyeon');
+  textFont('urbanist');
   text("Let's get rid of the COVID virus.",250,250);
   pop();
 
@@ -154,8 +153,8 @@ if(start1 == true){
   textSize(32);
   //fontWeight(400);
   textAlign(CENTER);
-  textFont('Do Hyeon');
-  text('Find the virus.',250,180);
+  textFont('urbanist');
+  text('Here we go agian',250,180);
   pop();
 }
 
