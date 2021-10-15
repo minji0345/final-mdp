@@ -18,9 +18,6 @@ function setup() {
     viruses2[i] = new Light(random(-0.5,0.5),random(-2,2),random(3,10),random(width),random(height));
   }
 
-  for (let i = 0; i < 300; i ++){
-    viruses3[i] = new Virus2(random(-2,2),random(-0.5,0.5),random(5,20),random(width),random(height));
-  }
   textFont('urbanist');
   button = createButton('First');
   button.mousePressed(buttonClicked);
@@ -110,13 +107,6 @@ for(let v of viruses2){
   }
   }
 
-  for(let v of viruses3){
-    v.display();
-    
-    if (mouseIsPressed && start1 == false){
-    v.move();
-  }
-  }
 
 push();
 
