@@ -53,7 +53,7 @@ class Light {
       this.xp += this.xs/2;
       this.yp += this.ys/2;
       noStroke();
-      ellipse(this.xp,this.yp,this.d/3,this.d/3);
+      ellipse(this.xp,this.yp,this.d*2,this.d*2);
     
       if (this.xp < 0 || this.xp > width) {
         this.xs *= -0.5;
@@ -63,3 +63,4 @@ class Light {
       }
     }
 }
+
