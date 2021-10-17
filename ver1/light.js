@@ -4,9 +4,6 @@ class Light {
     this.xs = _xs;
     this.ys = _ys;
     this.d = _d;
-    // this.xp = Math.random(width);
-    // this.yp = Math.random(height);
-    //출발점 (0,0)
     this.xp = _xp;
     this.yp = _yp;
     this.boundary = 50;
@@ -53,16 +50,16 @@ class Light {
   }
   
   display() {
-      this.xp += this.xs;
-      this.yp += this.ys;
+      this.xp += this.xs/2;
+      this.yp += this.ys/2;
       noStroke();
       ellipse(this.xp,this.yp,this.d/3,this.d/3);
     
       if (this.xp < 0 || this.xp > width) {
-        this.xs *= -1;
+        this.xs *= -0.5;
       }
       if (this.yp < 0 || this.yp > height) {
-        this.ys *= -1;
+        this.ys *= -0.5;
       }
     }
 }
